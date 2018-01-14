@@ -7,9 +7,19 @@
 //
 
 #include <stdio.h>
+#include "mst.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+ 
+    struct Graph g;
+    struct vert u;
+    struct Graph init(void);
+    void MiniSpanTree_PRIM(struct Graph g,struct vert u);
+    void MiniSpanTree_KRUSKAL(struct Graph g);
+    g=init();
+    u=g.vexs[3];
+    printf("从%c顶点开始\n",u.data);
+    MiniSpanTree_PRIM(g, u);
+    MiniSpanTree_KRUSKAL(g);
     return 0;
 }
