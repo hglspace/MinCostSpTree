@@ -10,7 +10,7 @@
 #include "mst.h"
 
 int main(int argc, const char * argv[]) {
- 
+    //求无向连通图的最小生成树
     struct Graph g;
     struct vert u;
     struct Graph init(void);
